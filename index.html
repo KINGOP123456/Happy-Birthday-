@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Future Doctor ✦</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+:root{--bg:#100d20;--panel:#1c1731;--pink:#ff8fbd;--lav:#bba6ff;--cream:#fff5fa;--muted:#c5bad7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font:15px/1.7 'DM Sans',sans-serif;overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;width:380px;height:380px;border-radius:50%;filter:blur(100px);opacity:.22;z-index:-2;animation:orb 12s ease-in-out infinite alternate}
+body:before{background:#9b5cff;top:-150px;left:-120px}body:after{background:#ff5ca8;right:-150px;bottom:-170px;animation-delay:-5s}
+@keyframes orb{to{transform:translate(70px,55px) scale(1.2)}}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#c8a9ff 1px,transparent 1px);background-size:83px 83px,137px 137px;background-position:0 0,30px 50px;opacity:.18;animation:twinkle 5s ease-in-out infinite alternate}
+@keyframes twinkle{to{opacity:.34}}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:28px;padding:15px 12px;background:#100d20cc;backdrop-filter:blur(16px);border-bottom:1px solid #ffffff14}
+nav a{color:#d8cbea;text-decoration:none;font-size:12px;letter-spacing:.08em;text-transform:uppercase;transition:.2s}nav a:hover{color:var(--pink)}
+.hero{min-height:76vh;display:grid;place-items:center;text-align:center;padding:80px 20px 65px;position:relative}
+.hero-inner{max-width:780px;animation:rise .9s both}
+@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border:1px solid #ffffff24;border-radius:99px;color:#e6d9ff;background:#ffffff09;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+h1,h2{font-family:'Playfair Display',serif;line-height:1.15}h1{font-size:clamp(43px,8vw,82px);margin:22px 0 16px;letter-spacing:-.04em}h1 span{background:linear-gradient(100deg,#fff0f7,#ff8fbd 45%,#bba6ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:540px;margin:0 auto 28px;color:var(--muted);font-size:16px}
+.btn{border:0;border-radius:99px;padding:13px 22px;background:linear-gradient(100deg,#ff80b5,#a78bfa);color:#1a1028;font-weight:700;cursor:pointer;box-shadow:0 8px 30px #c16bca44;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px #c16bca77}.btn:active{transform:scale(.97)}
+.hero-icon{font-size:50px;display:block;margin-top:34px;filter:drop-shadow(0 0 18px #ff8fbd77);animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-12px) rotate(5deg)}}
+main{max-width:920px;margin:auto;padding:0 20px 70px}section{margin:0 0 72px;scroll-margin-top:85px}
+.section-head{text-align:center;margin-bottom:25px}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--pink)}h2{font-size:clamp(28px,4vw,39px);margin:7px 0 8px}.section-head p{color:var(--muted);margin:0;font-size:14px}
+.panel{background:linear-gradient(145deg,#ffffff10,#ffffff05);border:1px solid #ffffff1c;border-radius:22px;padding:clamp(22px,4vw,36px);box-shadow:0 20px 60px #0002;backdrop-filter:blur(12px)}
+.letter{max-width:760px;margin:auto;color:#e7dfee}.letter p{margin:0 0 14px}.signature{color:var(--pink);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.reason{padding:20px 16px;border-radius:18px;background:#ffffff09;border:1px solid #ffffff17;transition:.25s}.reason:hover{transform:translateY(-6px);background:#ffffff12;border-color:#ff8fbd66}.reason .emoji{font-size:27px}.reason h3{font-size:14px;margin:8px 0 3px;color:#fff}.reason p{font-size:12px;color:var(--muted);margin:0}
+.notes{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.note-btn{padding:17px;border-radius:15px;text-align:left;background:#ffffff09;border:1px solid #ffffff1b;color:#fff;font:600 14px 'DM Sans';cursor:pointer;transition:.2s}.note-btn:hover{transform:translateY(-3px);border-color:#ff8fbd88;background:#ff8fbd12}.note-btn span{font-size:23px;margin-right:10px;vertical-align:middle}
+.cake-panel{text-align:center;overflow:hidden;position:relative}.cake-panel:before{content:"";position:absolute;width:220px;height:220px;border-radius:50%;background:#ff8fbd22;filter:blur(65px);left:calc(50% - 110px);top:10px}
+.cake{height:190px;width:230px;position:relative;margin:10px auto 4px;z-index:1;filter:drop-shadow(0 18px 15px #0005)}
+.tier{position:absolute;left:26px;bottom:20px;width:178px;height:83px;border-radius:13px 13px 20px 20px;background:linear-gradient(90deg,#f78db7,#ffd1e2 48%,#f18ab4);box-shadow:inset 0 -10px #d85f98}
+.tier:before{content:"";position:absolute;top:-10px;left:0;width:100%;height:27px;border-radius:50%;background:#fff0f6;box-shadow:inset 0 -5px #f4b5d0}
+.tier:after{content:"";position:absolute;top:10px;left:22px;width:10px;height:23px;background:#fff0f6;border-radius:0 0 9px 9px;box-shadow:39px 3px #fff0f6,78px -1px #fff0f6,117px 4px #fff0f6}
+.candle{position:absolute;bottom:111px;width:10px;height:43px;border-radius:5px;background:repeating-linear-gradient(135deg,#fff 0 6px,#ad8bfa 6px 11px);z-index:3;box-shadow:0 0 8px #fff7,0 0 18px #ffd36e55,inset -2px 0 3px #9b78c955}
+.c1{left:76px}.c2{left:110px}.c3{left:144px}
+
+    .flame{position:absolute;left:-1px;top:-23px;width:12px;height:19px;border-radius:55% 45% 55% 45%;transform:rotate(45deg);transform-origin:50% 90%;background:radial-gradient(ellipse at 50% 72%,#fffde2 0 16%,#fff1a1 28%,#ffbd45 57%,#ff7a24 78%,#ff5b1f 100%);box-shadow:0 0 7px 3px #fff1a8,0 0 17px 7px #ffb83f99,0 0 34px 13px #ff8c2d55;animation:flameDance .16s infinite alternate}
+    .flame:after{content:"";position:absolute;width:5px;height:10px;left:3px;top:5px;border-radius:50%;background:#fffef0;filter:blur(.4px);opacity:.95}
+    .candle:has(.flame){filter:drop-shadow(0 0 7px #ffc45c88)}
+    @keyframes flameDance{0%{transform:rotate(42deg) scale(.92,1.05)}100%{transform:rotate(49deg) scale(1.08,.92)}}
+    
+@keyframes flicker{to{transform:rotate(35deg) scale(.8);opacity:.75}}
+.blown .flame{display:none}.blown .candle{box-shadow:none;filter:none}.cake-hint{color:var(--muted);font-size:13px;margin:0 0 12px}.count{height:45px;font-size:35px;font-weight:700;color:var(--pink)}.happy{min-height:38px;color:#ffd5e8;font-size:22px;font-weight:700}
+.final{text-align:center}.final .panel{background:linear-gradient(120deg,#ff8fbd1b,#a78bfa1b)}
+footer{text-align:center;color:#897e9e;font-size:12px;padding:0 20px 28px}
+.modal{display:none;position:fixed;inset:0;z-index:20;background:#070510c9;backdrop-filter:blur(9px);align-items:center;justify-content:center;padding:20px}.modal.show{display:flex}.modal-box{max-width:420px;width:100%;text-align:center;padding:30px;border-radius:22px;background:#211a38;border:1px solid #ffffff25;box-shadow:0 20px 80px #0008;animation:pop .25s ease-out}.modal-box h3{font-family:'Playfair Display';font-size:25px;color:#ffb5d2}.modal-box p{color:#e5d9ed}@keyframes pop{from{opacity:0;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+#effects{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:30}
+    .confetti{position:absolute;left:var(--left);bottom:var(--bottom);top:auto;width:var(--w);height:var(--h);opacity:0;will-change:transform,opacity;animation:popperFlight var(--duration) cubic-bezier(.12,.55,.25,1) var(--delay) forwards}
+    .confetti.paper{border-radius:2px}
+    .confetti.ribbon{width:var(--w);height:var(--h);border-radius:999px}
+    .confetti.dot{border-radius:50%;width:var(--w);height:var(--w)}
+    .confetti.star{width:auto;height:auto;background:transparent!important;font-size:var(--w);line-height:1;text-shadow:0 1px 8px #fff8}
+    @keyframes popperFlight{
+      0%{transform:translate3d(0,0,0) rotate(0deg) scale(.45);opacity:0}
+      7%{opacity:1}
+      34%{transform:translate3d(calc(var(--x)*.48),calc(var(--rise)*-1),0) rotate(calc(var(--spin)*.48)) scale(1);opacity:1}
+      55%{transform:translate3d(calc(var(--x)*.78),calc(var(--rise)*-.72),0) rotate(calc(var(--spin)*.8)) scale(.96);opacity:1}
+      100%{transform:translate3d(var(--x),calc(var(--fall)),0) rotate(var(--spin)) scale(.8);opacity:0}
+    }
+    
+.float-heart{position:fixed;bottom:-35px;pointer-events:none;z-index:1;animation:heartUp 7s linear forwards;opacity:0.7}@keyframes heartUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:650px){.grid{grid-template-columns:repeat(2,1fr)}nav{gap:15px}nav a{font-size:10px}.hero{min-height:68vh}.notes{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="stars"></div>
+<nav><a href="#note">The note</a><a href="#reasons">Why you're special</a><a href="#open">Open when</a><a href="#cake">Birthday surprise</a></nav>
+<header class="hero" id="top"><div class="hero-inner">
+<div class="eyebrow">✦ a little celebration, just for you ✦</div>
+<h1>Happy Birthday,<br><span>Future Doctor!</span></h1>
+<p>Today is all about you. Here's a little corner of the internet filled with good wishes, smiles and a tiny surprise.</p>
+<button class="btn" onclick="document.querySelector('#note').scrollIntoView({behavior:'smooth'})">Come on in ↓</button>
+<span class="hero-icon">🩺</span>
+</div></header>
+<main>
+<section id="note"><div class="section-head"><div class="kicker">A little something</div><h2>A birthday note 💌</h2></div><div class="panel letter">
+<p>Dear Future Doctor,</p>
+<p>Happy Birthday! I hope your day is filled with happiness, laughter and all the little things that make you smile.</p>
+<p>Thank you for being such a lovely friend. I'm grateful for our conversations, laughs and all the little moments we've shared. Keep being your wonderful self.</p>
+<p>Keep chasing your dream. I know becoming a doctor takes patience and hard work, and I hope you achieve everything you wish for. Don't forget to take care of yourself along the way.</p>
+<p>Wishing you lots of happiness, good health and success. Have the best birthday!</p><p class="signature">From your friend, with love ♡</p>
+</div></section>
+<section id="reasons"><div class="section-head"><div class="kicker">The little things</div><h2>You're pretty special ✨</h2><p>A few things worth celebrating about you.</p></div><div class="grid">
+<div class="reason"><div class="emoji">🌷</div><h3>Your kindness</h3><p>You make people feel cared for.</p></div>
+<div class="reason"><div class="emoji">😊</div><h3>Your smile</h3><p>It makes ordinary days brighter.</p></div>
+<div class="reason"><div class="emoji">🩺</div><h3>Your big dreams</h3><p>Your dedication is inspiring.</p></div>
+<div class="reason"><div class="emoji">💗</div><h3>Your friendship</h3><p>I'm lucky to know you.</p></div>
+</div></section>
+<section id="open"><div class="section-head"><div class="kicker">For any kind of day</div><h2>Open when... 📨</h2><p>Pick a little message whenever you need one.</p></div><div class="notes">
+<button class="note-btn" onclick="showNote('When you feel sad','It is okay to have difficult days. Take your time, be kind to yourself and remember that better days will come. ♡')"><span>🌧️</span>When you feel sad</button>
+<button class="note-btn" onclick="showNote('When you feel like giving up','Pause for a moment and take a breath. You have already come so far, and one difficult day does not decide your future. Keep going, one small step at a time. Your dream is worth the effort. 🌟')"><span>🌟</span>When you feel like giving up</button>
+<button class="note-btn" onclick="showNote('When you doubt yourself','You have worked hard to reach where you are. Believe in yourself and take things one step at a time. Future Doctor, you can do it! ⭐')"><span>⭐</span>When you need motivation</button>
+<button class="note-btn" onclick="showNote('When the journey feels hard','Remember why you started. Becoming a doctor may not be easy, but every chapter you study, every challenge you face and every time you try again brings you closer. Trust your hard work. You are capable of more than you think. 🩺✨')"><span>🩺</span>When the journey feels hard</button>
+</div></section>
+<section id="cake"><div class="section-head"><div class="kicker">Make a wish</div><h2>Your birthday moment 🎂</h2><p>Close your eyes, make a wish and tap the button.</p></div><div class="panel cake-panel">
+<div class="cake" id="cakeArt"><div class="candle c1"><i class="flame"></i></div><div class="candle c2"><i class="flame"></i></div><div class="candle c3"><i class="flame"></i></div><div class="tier"></div></div>
+<p class="cake-hint">Ready? Let's make this birthday official.</p><div class="count" id="count"></div><div class="happy" id="happy"></div><button class="btn" id="cakeBtn" onclick="startCake()">Blow out the candles ✨</button>
+</div></section>
+<section class="final"><div class="panel"><div style="font-size:38px">🎀</div><h2>One more thing...</h2><p style="color:var(--muted);max-width:520px;margin:0 auto 20px">May this year bring you closer to your dreams, surround you with good people and give you a hundred reasons to smile. Keep shining, Future Doctor!</p><button class="btn" onclick="celebrate()">Send you birthday sparkles ✦</button></div></section>
+</main><footer>♡</footer>
+<div class="modal" id="modal" onclick="if(event.target===this)closeNote()"><div class="modal-box"><div style="font-size:32px">💌</div><h3 id="modalTitle"></h3><p id="modalText"></p><button class="btn" onclick="closeNote()">Close ♡</button></div></div>
+<div id="effects"></div>
+<script>
+function showNote(t,b){modalTitle.textContent=t;modalText.textContent=b;modal.classList.add('show')}function closeNote(){modal.classList.remove('show')}document.addEventListener('keydown',e=>{if(e.key==='Escape')closeNote()});
+let busy=false,done=false;
+function startCake(){if(busy)return;if(done){cakeArt.classList.remove('blown');happy.textContent='';count.textContent='';cakeBtn.textContent='Blow out the candles ✨';done=false;return}busy=true;cakeBtn.disabled=true;cakeBtn.textContent='Make a wish...';let n=3;count.textContent=n;const timer=setInterval(()=>{n--;if(n>0)count.textContent=n;else{clearInterval(timer);count.textContent='💨';cakeArt.classList.add('blown');setTimeout(()=>{count.textContent='';happy.textContent='HAPPY BIRTHDAY, FUTURE DOCTOR! 🎉';cakeBtn.disabled=false;cakeBtn.textContent='Again? ♡';busy=false;done=true;celebrate()},450)}},850)}
+function celebrate(){
+  const root=document.getElementById('effects');
+  const colors=['#ff8fbd','#bba6ff','#ffe08a','#8ee2c5','#fff5fa','#ffad66','#83d8ff'];
+  const shapes=['paper','ribbon','dot','star'];
+  const launchPoints=[{x:8,y:0},{x:92,y:0},{x:50,y:0}];
+  launchPoints.forEach((point,burstIndex)=>{
+    for(let i=0;i<58;i++){
+      const p=document.createElement('i');
+      const shape=shapes[Math.floor(Math.random()*shapes.length)];
+      p.className='confetti '+shape;
+      const color=colors[Math.floor(Math.random()*colors.length)];
+      p.style.background=color;
+      p.style.color=color;
+      if(shape==='star'){p.textContent='✦';}
+      p.style.setProperty('--left',(point.x+(Math.random()*8-4))+'vw');
+      p.style.setProperty('--bottom',(Math.random()*5-2)+'vh');
+      p.style.setProperty('--w',(shape==='star'?12+Math.random()*13:4+Math.random()*8)+'px');
+      p.style.setProperty('--h',(shape==='ribbon'?18+Math.random()*24:6+Math.random()*12)+'px');
+      p.style.setProperty('--x',((Math.random()*2-1)*(180+Math.random()*360))+'px');
+      p.style.setProperty('--rise',(38+Math.random()*48)+'vh');
+      p.style.setProperty('--fall',(55+Math.random()*105)+'vh');
+      p.style.setProperty('--spin',((Math.random()*2-1)*1100)+'deg');
+      p.style.setProperty('--duration',(5+Math.random()*1)+'s');
+      p.style.setProperty('--delay',(burstIndex*.12+Math.random()*.35)+'s');
+      if(shape==='ribbon'){p.style.borderRadius='999px';}
+      root.appendChild(p);
+      setTimeout(()=>p.remove(),6800);
+    }
+  });
+}
+setInterval(()=>{let h=document.createElement('span');h.className='float-heart';h.textContent=['♡','✦','♥'][Math.floor(Math.random()*3)];h.style.left=Math.random()*100+'vw';h.style.color=['#ff8fbd','#bba6ff','#ffe2ed'][Math.floor(Math.random()*3)];h.style.fontSize=(13+Math.random()*16)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),7100)},1800);
+</script>
+</body></html>
